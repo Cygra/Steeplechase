@@ -13,6 +13,12 @@ const RULES = [
     pattern: /^https:\/\/link\.zhihu\.com\//,
     param: "target",
   },
+  {
+    // 掘金外链跳转
+    // https://link.juejin.cn/?target=<url>
+    pattern: /^https:\/\/link\.juejin\.cn\//,
+    param: "target",
+  },
 ];
 
 (function () {
