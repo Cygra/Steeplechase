@@ -4,6 +4,11 @@
 
 一些平台会把外链包装在自己的跳转页里（如飞书的安全提示页、知乎的外链跳转页）。Steeplechase 检测到这类 URL 后，自动提取真实目标地址并直接跳转，无需额外点击或等待。
 
+<img width="680" height="318" alt="image" src="https://github.com/user-attachments/assets/a03b1b94-2c1f-420a-bd0d-2a2230bee9ee" />
+
+<img width="631" height="327" alt="image" src="https://github.com/user-attachments/assets/0df66a9d-f2d9-4a12-9a9d-972578b9dea1" />
+
+
 **当前支持的规则：**
 
 | 平台 | URL 格式                                  |
