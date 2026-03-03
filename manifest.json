@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Steeplechase",
+  "version": "0.1.0",
+  "description": "自动跳转中间页链接，直达目标地址",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["redirect.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
