@@ -15,6 +15,7 @@
 | ---- | ----------------------------------------- |
 | 飞书 | `security.feishu.cn/link/safety?target=…` |
 | 知乎 | `link.zhihu.com/?target=…`                |
+| 掘金 | `link.juejin.cn/?target=…`                |
 
 ## 安装
 
