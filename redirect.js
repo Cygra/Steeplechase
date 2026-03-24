@@ -34,12 +34,6 @@ const RULES = [
   const url = new URL(location.href);
   const isWeixin110RedirectPage = WEIXIN110_REDIRECT_PATTERN.test(url.href);
 
-  const extractTargetFromText = (text) => {
-    if (!text) return null;
-    const matched = text.match(/https?:\/\/[^\s"'<>（）()]+/i);
-    return matched ? matched[0].replace(/[，。,.!?！？；;]+$/u, "") : null;
-  };
-
   const normalizeTarget = (value) => {
     if (!value) return null;
     try {
@@ -61,13 +55,8 @@ const RULES = [
 
   if (isWeixin110RedirectPage) {
     const tryWeixin110Redirect = () => {
-      const paragraphs = document.querySelectorAll("p");
-      for (const p of paragraphs) {
-        for (const a of p.querySelectorAll('a[href]')) {
-          if (redirectIfValid(a.getAttribute("href"))) return true;
-        }
-        if (redirectIfValid(extractTargetFromText(p.textContent || ""))) return true;
-      }
+      const link = document.querySelector("p a[href]");
+      if (link && redirectIfValid(link.getAttribute("href"))) return true;
       return false;
     };
 

@@ -11,7 +11,7 @@
 | 飞书 | `security.feishu.cn/link/safety?target=…` | <img width="631" height="327" alt="image" src="https://github.com/user-attachments/assets/0df66a9d-f2d9-4a12-9a9d-972578b9dea1" /> |
 | 知乎 | `link.zhihu.com/?target=…`                | <img width="680" height="318" alt="image" src="https://github.com/user-attachments/assets/a03b1b94-2c1f-420a-bd0d-2a2230bee9ee" /> |
 | 掘金 | `link.juejin.cn/?target=…`                | <img width="674" height="276" alt="image" src="https://github.com/user-attachments/assets/7213bc96-654b-4bb8-95f1-45fb345cea7a" /> |
-| 微信 110 | `weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?...`（从页面 `p` 标签中提取链接） | |
+| 微信 110 | `weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?...`（从页面 `p a[href]` 提取链接） | |
 
 ## 安装
 
