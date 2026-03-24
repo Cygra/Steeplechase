@@ -2,6 +2,7 @@
 // 每条规则包含：匹配当前页面 URL 的 pattern，以及 target 参数名
 const WEIXIN110_REDIRECT_PATTERN =
   /^https:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\b/;
+const WEIXIN110_OBSERVER_TIMEOUT_MS = 10000;
 
 const RULES = [
   {
@@ -85,7 +86,7 @@ const RULES = [
     });
     if (document.documentElement) {
       observer.observe(document.documentElement, { childList: true, subtree: true });
-      setTimeout(() => observer.disconnect(), 10000);
+      setTimeout(() => observer.disconnect(), WEIXIN110_OBSERVER_TIMEOUT_MS);
     }
     return;
   }
