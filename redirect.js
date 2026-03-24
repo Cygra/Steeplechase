@@ -55,8 +55,10 @@ const RULES = [
 
   if (isWeixin110RedirectPage) {
     const tryWeixin110Redirect = () => {
-      const link = document.querySelector("p a[href]");
-      if (link && redirectIfValid(link.getAttribute("href"))) return true;
+      const links = document.querySelectorAll("p a[href]");
+      for (const link of links) {
+        if (redirectIfValid(link.getAttribute("href"))) return true;
+      }
       return false;
     };
 
