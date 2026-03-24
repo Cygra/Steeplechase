@@ -10,8 +10,8 @@
 | ---- | ----------------------------------------- | --- |
 | 飞书 | `security.feishu.cn/link/safety?target=…` | <img width="631" height="327" alt="image" src="https://github.com/user-attachments/assets/0df66a9d-f2d9-4a12-9a9d-972578b9dea1" /> |
 | 知乎 | `link.zhihu.com/?target=…`                | <img width="680" height="318" alt="image" src="https://github.com/user-attachments/assets/a03b1b94-2c1f-420a-bd0d-2a2230bee9ee" /> |
-| 掘金 | `link.juejin.cn/?target=…`                | <img width="674" height="276" alt="image" src="https://github.com/user-attachments/assets/7213bc96-654b-4bb8-95f1-45fb345cea7a" />
- |
+| 掘金 | `link.juejin.cn/?target=…`                | <img width="674" height="276" alt="image" src="https://github.com/user-attachments/assets/7213bc96-654b-4bb8-95f1-45fb345cea7a" /> |
+| 微信 110 | `weixin110.qq.com/cgi-bin/mmspamsupport-bin/newredirectconfirmcgi?...`（从页面 `p` 标签中提取链接） | |
 
 ## 安装
 
@@ -29,14 +29,3 @@
 3. 选择 `Steeplechase` 文件夹内的任意文件（如 `manifest.json`）。
 
 > 注意：Firefox 的临时扩展在浏览器关闭后会失效。如需持久安装，需通过 Mozilla Add-ons 对扩展进行签名。
-
-## 添加新规则
-
-编辑 `redirect.js`，在 `RULES` 数组中追加一条记录：
-
-```js
-{
-  pattern: /^https:\/\/example\.com\/redirect/,
-  param: "url",  // 存放目标链接的查询参数名
-}
-```
