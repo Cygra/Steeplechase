@@ -45,7 +45,6 @@ const RULES = [
     try {
       const targetUrl = new URL(value, url.href);
       if (!/^https?:$/.test(targetUrl.protocol)) return null;
-      if (targetUrl.origin === url.origin) return null;
       return targetUrl.href;
     } catch {
       return null;
